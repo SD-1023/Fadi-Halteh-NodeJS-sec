@@ -24,7 +24,7 @@ async function getBookById(requestedId) {
     try {
         const books = await getbooks('books.json');
         const book = books.filter(book => book.id === requestedId);
-        if (!book) {
+        if (book.length===0) {
             throw new Error('Book with the requested ID not found');
         }
         return book;

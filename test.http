@@ -1,10 +1,10 @@
 GET http://localhost:3000/books
 ###
-GET http://localhost:3000/books/4
+GET http://localhost:3000/books/1
 ###
 POST http://localhost:3000/books
 Content-Type: application/json
 
 {
-    "name":"Harry Potter"
+    "name":"pokemo"
 }
